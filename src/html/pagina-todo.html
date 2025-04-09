@@ -5,54 +5,21 @@
 <meta charset="utf-8" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.9.1/font/bootstrap-icons.css">
-<style>
-body {
-background-color: #001f3f;
-color: white;
-font-family: Arial, sans-serif;
-}
-h1 {
-color: white;
-text-align: center;
-margin-top: 20px;
-}
-a {
-padding: 5px 10px;
-background-color: white;
-color: #001f3f;
-border: 2px solid #001f3f;
-border-radius: 5px;
-text-decoration: none;
-position: absolute;
-top: 10px;
-left: 10px;
-}
-a:hover {
-background-color: #001f3f;
-color: white;
-}
-.input-group-text {
-background-color: #007bff;
-color: white;
-}
-.btn-success {
-background-color: #007bff;
-border-color: #0056b3;
-color: white;
-}
-.btn-success:hover {
-background-color: #0056b3;
-border-color: #003f7f;
-}
-.table-hover th, .table-hover td {
-color: white;
-}
-</style>
+<link rel="stylesheet" href="/src/css/todo_style.css">
 </head>
 <body>
-<div style="position: relative;">
-<a href="/index.html">Volver al menú principal</a>
-</div>
+    <header>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <!-- Navbar content -->
+            <div class="container-fluid">
+                <a class="navbar-brand">Navbar</a>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+          </nav>
+    </header>
 <div class="container">
 <div class="row">
 <div style="margin-top: 50px;">

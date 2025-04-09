@@ -1,0 +1,41 @@
+body {
+    background-image: url(/src/img/cool-gray-61nfwad1bullevu4.jpg);
+    color: white;
+    font-family: Arial, sans-serif;
+    }
+    h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    }
+    a {
+    padding: 5px 10px;
+    background-color: white;
+    color: #001f3f;
+    border: 2px solid #001f3f;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+    a:hover {
+    background-color: #001f3f;
+    color: white;
+    }
+    .input-group-text {
+    background-color: #007bff;
+    color: white;
+    }
+    .btn-success {
+    background-color: #007bff;
+    border-color: #0056b3;
+    color: white;
+    }
+    .btn-success:hover {
+    background-color: #0056b3;
+    border-color: #003f7f;
+    }
+    .table-hover th, .table-hover td {
+    color: white;
+    }

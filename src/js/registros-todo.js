@@ -56,7 +56,7 @@ function mostrarTarea(tarea) {
     <td>
       ${tarea.estado === "pendiente"
         ? `<button class="btn btn-success btn-sm completar-btn" data-id="${tarea.id}">Completar</button>`
-        : `<span class="text-success">Completada</span>`
+        : `<span class="text-success"></span>`
       }
     </td>
   `;
@@ -98,3 +98,13 @@ function eliminarTarea(idTarea) {
   localStorage.setItem("tareas", JSON.stringify(tareas));
   cargarTareas();
 }
+
+document.getElementById("btnEliminarCompletadas").addEventListener("click", function () {
+  let tareas = JSON.parse(localStorage.getItem("tareas")) || [];
+
+  tareas = tareas.filter(tarea => tarea.estado !== "completada");
+  localStorage.setItem("tareas", JSON.stringify(tareas));
+
+  cargarTareas();
+  alert("Todas las tareas completadas han sido eliminadas.");
+});
